@@ -16,12 +16,28 @@ body {
   color: $uoc-corporate;
 }
 
+h3 {
+  @media (min-width: $mq-min-width) {
+    font-size: 1.5rem;
+  }
+}
+
 .main {
   padding-top: 60rem;
 }
 
 .article {
   background-color: $uoc-corporate-secundary;
+}
+
+.article__title {
+  font-family: $font-family-rissa;
+  font-size: 2rem;
+  text-align: center;
+
+  @media (min-width: $mq-min-width) {
+    font-size: 3rem;
+  }
 }
 
 /**
