@@ -1,0 +1,9 @@
+@use "sass:color";
+
+@function adjust-color-brightness($color, $percentage) {
+  @if $percentage > 0 {
+    @return color.adjust($color, $lightness: $percentage); // Aclara el color
+  } @else {
+    @return color.adjust($color, $lightness: $percentage); // Oscurece el color
+  }
+}

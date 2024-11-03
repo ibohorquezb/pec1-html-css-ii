@@ -7,8 +7,6 @@
  * Import variables
  */
 
-@import "variables";
-
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
@@ -23,7 +21,9 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+@use "layouts/header";
+@use "layouts/home";
+@use "layouts/footer";
 
 /**
  * Do NOT include anything else in this file!

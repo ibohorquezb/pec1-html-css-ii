@@ -1,27 +1,190 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Iván Bohórquez Barrios" />
+  <meta name="description" content="Bahía de Cádiz" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+  <!-- do not remove this line! -->
+  <title>Bahía de Cádiz</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+
+  <main class="main">
+
+    <article class="article">
+
+      <section id="bienvenida" class="section--featured" data-aos="fade-up">
+        <h2><i class="fa fa-handshake-simple"></i> | Bienvenida</h2>
+        <div class="section__content">
+          <figure class="content__figure" data-aos="flip-left">
+            <picture>
+              <source media="(max-width: 428px)" srcset="./assets/images/bahia_cadiz.jpg?as=webp&width=350"
+                type="image/webp" />
+              <source media="(min-width: 768px)" srcset="./assets/images/bahia_cadiz.jpg?as=webp&width=600"
+                type="image/webp" />
+              <img src="./assets/images/bahia_cadiz.jpg" alt="Bahía de Cádiz">
+            </picture>
+            <figcaption class="figure__caption">Vista de la Bahía de Cádiz</figcaption>
+          </figure>
+          <p class="content__text">
+            Bienvenidos a la Bahía de Cádiz, un rincón de Andalucía donde la historia, el arte y la naturaleza se
+            entrelazan
+            en un entorno único. Te invitamos a descubrir su rica cultura, sus paisajes impresionantes y la calidez de
+            su
+            gente.
+          </p>
+        </div>
+      </section>
+
+      <section id="historia" class="section" data-aos="fade-up">
+        <h2><i class="fa fa-hourglass-half"></i> | Historia</h2>
+        <div class="section__content">
+          <figure class="content__figure" data-aos="flip-left">
+            <picture>
+              <source media="(max-width: 428px)" srcset="./assets/images/yacimiento_gadir.jpg?as=webp&width=350"
+                type="image/webp" />
+              <source media="(min-width: 768px)" srcset="./assets/images/yacimiento_gadir.jpg?as=webp&width=600"
+                type="image/webp" />
+              <img src="./assets/images/yacimiento_gadir.jpg" alt="Yacimiento Gadir">
+            </picture>
+            <figcaption class="figure__caption">Yacimiento Gadir</figcaption>
+          </figure>
+          <p class="content__text">
+            Cádiz es una de las ciudades más antiguas de Europa, con más de 3000 años de historia. Fundada por los
+            fenicios, fue un importante centro comercial durante la época romana y ha sido testigo de diversas
+            civilizaciones. Su historia se ve reflejada en su arquitectura y sus tradiciones que perduran hasta hoy.
+          </p>
+        </div>
+      </section>
+
+      <section id="patrimonio" class="section" data-aos="fade-up">
+        <h2 class="content-section__title"><i class="fa fa-monument"></i> | Patrimonio</h2>
+        <div class="section__content">
+          <figure class="content__figure" data-aos="flip-left">
+            <picture>
+              <source media="(max-width: 428px)" srcset="./assets/images/atardecer_caleta.jpg?as=webp&width=350"
+                type="image/webp" />
+              <source media="(min-width: 768px)" srcset="./assets/images/atardecer_caleta.jpg?as=webp&width=600"
+                type="image/webp" />
+              <img src="./assets/images/atardecer_caleta.jpg" alt="Atardecer en la caleta">
+            </picture>
+            <figcaption class="figure__caption">Atardecer en la caleta</figcaption>
+          </figure>
+          <p class="content__text">
+            Entre los muchos tesoros patrimoniales de Cádiz se encuentran la Catedral, el Castillo de San Sebastián y el
+            Gran Teatro Falla. Estos monumentos no solo embellecen la ciudad, sino que cuentan historias de tiempos
+            pasados y representan la resistencia y el espíritu gaditano.
+          </p>
+        </div>
+      </section>
+
+      <section id="naturaleza" class="section" data-aos="fade-up">
+        <h2><i class="fa fa-leaf"></i> | Naturaleza</h2>
+        <div class="section__content">
+          <figure class="content__figure" data-aos="flip-left">
+            <picture>
+              <source media="(max-width: 428px)" srcset="./assets/images/parque_natural_cadiz.jpg?as=webp&width=350"
+                type="image/webp" />
+              <source media="(min-width: 768px)" srcset="./assets/images/parque_natural_cadiz.jpg?as=webp&width=600"
+                type="image/webp" />
+              <img src="./assets/images/parque_natural_cadiz.jpg" alt="Parque natural de l a Bahía de Cádiz">
+            </picture>
+            <figcaption class="figure__caption">Parque natural de la Bahía de Cádiz</figcaption>
+          </figure>
+          <p class="content__text">
+            La Bahía de Cádiz es un paraíso para los amantes de la naturaleza, con el Parque Natural Bahía de Cádiz
+            ofreciendo paisajes de marismas, dunas y playas vírgenes. Este espacio natural es el hogar de una increíble
+            biodiversidad, ideal para el avistamiento de aves y disfrutar de la tranquilidad del entorno.
+          </p>
+        </div>
+      </section>
+
+      <section id="gastronomia" class="section" data-aos="fade-up">
+        <h2><i class="fa fa-utensils"></i> | Gastronomía</h2>
+        <div class="section__content">
+          <figure class="content__figure" data-aos="flip-left">
+            <picture>
+              <source media="(max-width: 428px)" srcset="./assets/images/tortillitas_de_camarones.jpg?as=webp&width=350"
+                type="image/webp" />
+              <source media="(min-width: 768px)" srcset="./assets/images/tortillitas_de_camarones.jpg?as=webp&width=600"
+                type="image/webp" />
+              <img src="./assets/images/tortillitas_de_camarones.jpg" alt="Tortillitas de camarones">
+            </picture>
+            <figcaption class="figure__caption">Tortillitas de camarones</figcaption>
+          </figure>
+          <p class="content__text">
+            La gastronomía gaditana es un reflejo de su entorno y de su historia. Platos como el <em>pescaito
+              frito</em>,
+            las <em>tortillitas de camarones</em> y el <em>atún rojo de almadraba</em> son auténticas delicias del mar.
+            No
+            puedes irte sin probar el famoso vino de Jerez, perfecto para acompañar cualquier plato local.
+          </p>
+        </div>
+      </section>
+
+      <section id="contacto" class="section--featured" data-aos="fade-up">
+        <h2><i class="fa fa-envelope-open-text"></i> | Contacta</h2>
+        <div class="section__content">
+          <p class="content__text">
+            ¿Quieres saber más? Contacta con nosotros para recibir más información sobre la Bahía de Cádiz y planificar
+            tu
+            próxima visita.
+          </p>
+          <form class="content__form">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" id="email" name="email" class="form__element" />
+            <label for="message"><strong>Mensaje</strong></label>
+            <textarea name="message" class="form__element--message"></textarea>
+            <button type="submit" name="enviar" class="form__element--submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </article>
+
+    <section id="aclaracion" class="section" data-aos="fade-up">
+      <h2><i class="fa fa-info-circle"></i> | Aclaración sobre el contenido de esta web</h2>
+      <div>
+        <p>Las imágenes y videos utilizados en este sitio web desarrollado para la aisgnatura <em>Herramientas HTML y
+            CSS II</em> son exclusivamente con <strong>fines educativos y no comerciales</strong>.</p>
+
+        <p>Todos los materiales multimedia, como imágenes y videos, utilizados en este sitio web son propiedad de sus
+          respectivos titulares de derechos de autor. Se utilizan exclusivamente con fines educativos y de aprendizaje
+          dentro del contexto de este sitio web. Se hace un esfuerzo para cumplir con todas las leyes de derechos de
+          autor y propiedad intelectual, y se respeta el uso justo de dicho contenido.</p>
+
+        <p>Si usted es el titular de los derechos de autor de algún material utilizado en este sitio y considera que su
+          uso no cumple con los términos de uso justos, le pedimos que nos contacte para que podamos abordar su
+          preocupación de manera oportuna.</p>
+
+        <p>Agradecemos a los creadores de contenido original por su contribución al aprendizaje y la educación en línea.
+        </p>
+      </div>
+    </section>
+
+    <!-- <div class="uoc-container">
       <picture>
         <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
         <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
       </picture>
       <h1 class="uoc-title">Hello, UOC!</h1>
       <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+        This is a starter template for the Advanced HTML and CSS Tools
+        courses from the Master's Program in Multimedia Applications and
+        the Master's Program in Web App and Website Development at the
+        Universitat Oberta de Catalunya.
       </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    </div> -->
+  </main>
+
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script>
+  <!-- do not remove this line! -->
+</body>
+
 </html>

@@ -1,0 +1,79 @@
+@use "../variables" as *;
+@use "../functions" as *;
+
+.footer {
+  padding: 1rem;
+
+  background-color: $uoc-corporate;
+
+  @media (min-width: $mq-min-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+%footer-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $mq-min-width) {
+    display: block;
+    text-align: left;
+  }
+}
+
+.footer__block {
+  @extend %footer-block;
+}
+
+.footer__block--social {
+  @extend %footer-block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+%block-list {
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.block__list {
+  @extend %block-list;
+}
+
+.block__list--inline {
+  @extend %block-list;
+  display: inline-flex;
+  margin-bottom: 1rem;
+}
+
+.item__link--social {
+  margin: 0;
+}
+
+.block__title,
+.block__title-link {
+  color: $uoc-masterbrand;
+  text-decoration: none;
+}
+
+.block__title--logo {
+  margin-left: 1rem;
+
+  /* Typography */
+  font-family: $font-family-rissa;
+  font-size: 3.5rem;
+
+  transform: rotate(-9deg);
+}
+
+.block__text {
+  margin: 0;
+
+  text-align: center;
+
+  color: $uoc-corporate-secundary;
+}
