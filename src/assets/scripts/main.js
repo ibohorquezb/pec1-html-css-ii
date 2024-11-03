@@ -32,7 +32,6 @@ import "aos/dist/aos.css";
 
   //Cambia el tamaño de la cabecera y título de la misma según la posición del scroll
   window.addEventListener("scroll", function () {
-    console.log(window.scrollY + " >= " + headerHeight);
     if (window.scrollY >= headerHeight) {
       document.querySelector("header").classList.add("header--reduce");
       document
